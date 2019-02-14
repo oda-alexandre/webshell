@@ -83,7 +83,7 @@ def shell(func):
     func = test(url, tester, testkey)
     while True:
         try:
-            cmd = raw_input("shell:~$ ")
+            cmd = input("shell:~$ ")
             if cmd == "quit":
                 print "\n[-] Quitting"
                 sys.exit(0)

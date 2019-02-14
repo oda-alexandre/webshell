@@ -15,7 +15,7 @@ if (len(sys.argv) != 2):
 url = sys.argv[1]
 print "\n[+] URL in use: %s \n" %(url)
 while True:
-    cmd = raw_input("shell:~$ ")
+    cmd = input("shell:~$ ")
     if cmd == "quit":
         print "\n[-] Quitting"
         sys.exit(0)

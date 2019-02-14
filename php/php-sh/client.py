@@ -25,7 +25,7 @@ def main(args):
         while True:
             opener = urllib2.build_opener()
             url = args[1]
-            cmd = raw_input('~$ ')
+            cmd = input('~$ ')
             if cmd == "exit":
                 sys.exit(0)
             else:
