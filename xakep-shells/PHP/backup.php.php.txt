@@ -11,7 +11,7 @@ $data .= "#Table add_links:\r\n";$result = mysql_query("SELECT * FROM add_links"
 	foreach ($a as $key => $value) {
 		$a[$key] = addslashes($a[$key]);
 	}
-	$data .= "INSERT INTO add_links VALUES ('0','$a[link]', '$a[description]', '$a[tooltip]', '$a[hits]'); \r\n#endquery\r\n";
+	$data .= "INSERT INTO add_links VALUES ('0','$a[link]', '$a[description]', '$a[tooltip]', '$a[hits]') && \r\n#endquery\r\n";
 }
 
 

